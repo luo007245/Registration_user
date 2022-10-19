@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        #contact_form {
+  background-color: royalblue;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  }
+
+.row label{
+  color: #FFFFFF;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+input[type=text], textarea {
+  text-align: center;
+  background-color:powderblue;
+  border-radius: 10px;
+  margin: auto 0;
+  color: honeydew;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 10px #3e4444;
+  }
+
+input[type=text] {
+  height: 25px;
+}
+
+input[type=submit] {
+  background-color: #131211;
+  color: #FFFFFF;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-left: 10px;
+  box-shadow: 5px 5px 5px #3e4444;
+}
+    </style>
+</head>
+<body><form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+    <div class="row">
+      <label class="required" for="name">Your name:</label><br />
+      <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+      <span id="name_validation" class="error_message"></span>
+    </div>
+    <div class="row">
+      <label class="required" for="email">Your email:</label><br />
+      <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+      <span id="email_validation" class="error_message"></span>
+    </div>
+    <div class="row">
+      <label class="required" for="message">Your message:</label><br />
+      <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+      <span id="message_validation" class="error_message"></span>
+    </div>
+    <input id="submit_button" type="submit" value="Send " />
+</form>
+    
+</body>
+</html>
